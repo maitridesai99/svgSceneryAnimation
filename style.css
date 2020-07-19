@@ -1,0 +1,149 @@
+@-webkit-keyframes carAnimate {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes carAnimate {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blueAnimate {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes blueAnimate {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes bikeAnimate {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -5%;
+  }
+}
+
+@keyframes bikeAnimate {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -5%;
+  }
+}
+
+@-webkit-keyframes birdAnimate {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -20%;
+  }
+}
+
+@keyframes birdAnimate {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -20%;
+  }
+}
+
+body {
+  height: 100vh;
+}
+
+body .main {
+  position: relative;
+  background: url("./images/bg-scenery.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: 0 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body .main .car {
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-animation: carAnimate 3s linear infinite;
+          animation: carAnimate 3s linear infinite;
+}
+
+body .main .car img {
+  max-width: 25%;
+  height: auto;
+}
+
+body .main .car-blue {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -13%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation: blueAnimate 3s linear infinite;
+          animation: blueAnimate 3s linear infinite;
+}
+
+body .main .car-blue img {
+  max-width: 25%;
+  height: auto;
+}
+
+body .main .bike {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-animation: bikeAnimate 5s linear infinite;
+          animation: bikeAnimate 5s linear infinite;
+}
+
+body .main .bike img {
+  max-width: 10%;
+  height: auto;
+}
+
+body .main .birds {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation: birdAnimate 10s linear infinite;
+          animation: birdAnimate 10s linear infinite;
+}
+
+body .main .birds img {
+  width: 20%;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */

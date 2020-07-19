@@ -1,0 +1,105 @@
+@keyframes carAnimate{
+    0%{
+        left: 0%;
+    }
+
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes blueAnimate{
+    0%{
+        left: 100%;
+    }
+
+    100%{
+        left: -100%;
+    }
+}
+
+@keyframes bikeAnimate{
+    0%{
+        left: 100%;
+    }
+
+    100%{
+        left: -5%;
+    }
+}
+
+@keyframes birdAnimate{
+    0%{
+        right: 100%;
+    }
+
+
+    100%{
+        right: -20%;
+    }
+}
+
+body{
+    height: 100vh;
+    .main{
+        position: relative;
+        background: url("./images/bg-scenery.jpg");
+        background-repeat: repeat-x;
+        background-size: cover;
+        background-position: 0 100%;
+        height: 100%;
+        overflow: hidden;
+    
+    
+        .car{
+            position: absolute;
+            bottom: 7%;
+            width: 100%;
+            height: auto;
+            transition: all .5s ease;
+            animation: carAnimate 3s linear infinite;
+            img{
+                max-width: 25%;
+                height: auto;
+            }
+        }
+
+        .car-blue{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: -13%;
+            transform: rotateY(180deg);
+            animation: blueAnimate 3s linear infinite;
+            img{
+                max-width: 25%;
+                height: auto;
+            }
+        }
+    
+        .bike{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+            transition: all .5s ease;
+            animation: bikeAnimate 5s linear infinite;
+            img{
+                max-width: 10%;
+                height: auto;
+            }
+        }
+    
+        .birds{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            transform: rotateY(180deg);
+            animation: birdAnimate 10s linear infinite;
+            img{
+                width: 20%;
+                height: auto;
+            }
+        }
+    }
+}
